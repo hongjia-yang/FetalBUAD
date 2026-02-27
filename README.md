@@ -1,6 +1,7 @@
 # FetalBUAD: Simple Baselines for Fetal Brain Unsupervised Anomaly Detection
 
-**FetalBUAD** is a novel unsupervised anomaly detection (UAD) framework that repurposes voxel-level brain age prediction for dense lesion localization. By establishing an internal biological baseline via uncertainty weighting and bias correction, it robustly decouples dating errors from structural deviations, achieving state-of-the-art performance in detecting and localizing fetal brain anomalies.
+**FetalBUAD** is a novel baseline for fetal brain MRI 3D unsupervised anomaly detection (UAD). **FetalBUAD** repurposes voxel-level brain age prediction for dense lesion localization and establishes an internal biological gestational age reference, robustly decoupling dating errors from structural deviations, achieving state-of-the-art performance in detecting and localizing fetal brain anomalies.
+
 
 ---
 
@@ -9,11 +10,11 @@
 ```
 FetalBUAD/
 ├── data_processing/
-│   └── registration.py          # Preprocessing: Registration to 38-week atlas & Normalization
+│   └── registration.py          # Preprocessing: Registration to 38-week atlas
 ├── model_training/
 │   ├── Train.py                 # Main training script
-│   ├── dataset.py               # Custom Dataset class with Target Randomization
-│   ├── unet.py                  # Joint Multi-task Network Architecture
+│   ├── dataset.py               # Custom Dataset class with data preprocessing
+│   ├── net.py                   # Joint Multi-task Network Architecture
 │   ├── dice.py                  # Dice Loss implementation
 │   └── .gitignore
 ├── inference/
