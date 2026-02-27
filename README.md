@@ -1,11 +1,5 @@
 # FetalBUAD: Simple Baselines for Fetal Brain Unsupervised Anomaly Detection
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Framework: PyTorch](https://img.shields.io/badge/Framework-PyTorch-orange.svg)](https://pytorch.org/)
-[![MICCAI](https://img.shields.io/badge/Conference-MICCAI-blue.svg)](http://www.miccai.org/)
-
-This repository contains the official PyTorch implementation for the paper: **"Simple Baselines for Fetal Brain Unsupervised Anomaly Detection"**.
-
 **FetalBUAD** is a novel unsupervised anomaly detection (UAD) framework that repurposes voxel-level brain age prediction for dense lesion localization. By establishing an internal biological baseline via uncertainty weighting and bias correction, it robustly decouples dating errors from structural deviations, achieving state-of-the-art performance in detecting and localizing fetal brain anomalies.
 
 ---
@@ -117,20 +111,3 @@ FetalBUAD achieves state-of-the-art performance on both internal large-scale dat
 *For detailed results on lesion localization and generalization, please refer to the paper.*
 
 ---
-
-## 📝 Citation
-
-If you find this code useful for your research, please cite our paper:
-
-```bibtex
-@inproceedings{FetalBUAD2026,
-  title={Simple Baselines for Fetal Brain Unsupervised Anomaly Detection},
-  author={Anonymized Authors},
-  booktitle={Medical Image Computing and Computer Assisted Intervention -- MICCAI 2026},
-  year={2026}
-}
-```
-
-## ⚖️ License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
