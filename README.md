@@ -29,16 +29,20 @@ FetalBUAD/
 The code is implemented in Python using PyTorch. The main dependencies are:
 
 - Python 3.9.19
-- PyTorch 1.10+
+- PyTorch 2.2.2
 - Nibabel
 - Numpy
 - Pandas
 - Scikit-learn
 - SimpleITK
+- antspyx
+- bm4d
 
 Install dependencies via:
 ```bash
-pip install torch nibabel numpy pandas scikit-learn simpleitk
+conda create -n FetalBUAD python=3.9 -y
+conda activate FetalBUAD
+pip install -r requirements.txt
 ```
 
 ---
