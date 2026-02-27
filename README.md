@@ -99,15 +99,3 @@ python inference/3_generate_uncertainty_weight_gap_map_and_anomaly_score.py
 
 ---
 
-## 📊 Results
-
-FetalBUAD achieves state-of-the-art performance on both internal large-scale datasets and external benchmarks (FeTA dataset).
-
-| Method | AUROC | AUPR | Inference Speed |
-| :--- | :---: | :---: | :---: |
-| IterMask3D | 0.905 | 0.779 | Slow (Iterative) |
-| **FetalBUAD (Ours)** | **0.905** | **0.764** | **Fast (Single-pass)** |
-
-*For detailed results on lesion localization and generalization, please refer to the paper.*
-
----
