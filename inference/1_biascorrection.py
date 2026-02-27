@@ -10,7 +10,7 @@ from skimage.transform import resize
 import torch.nn.functional as F
 from sklearn.metrics import r2_score,mean_absolute_error
 import matplotlib.pyplot as plt
-from unet import *
+from net import *
 from torch.utils.data import DataLoader
 import os
 import re
@@ -203,3 +203,4 @@ corrected_ypredict = (ypredict - intercept) / slope
 corr_param=[slope,intercept]
 corr_param=np.array(corr_param)
 np.save('corr_param.npy',corr_param)
+
