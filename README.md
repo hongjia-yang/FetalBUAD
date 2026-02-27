@@ -1,6 +1,6 @@
 # FetalBUAD: Simple Baselines for Fetal Brain Unsupervised Anomaly Detection
 
-**FetalBUAD** is a novel baseline for fetal brain MRI 3D unsupervised anomaly detection (UAD). **FetalBUAD** repurposes voxel-level brain age prediction for dense lesion localization and establishes an internal biological gestational age reference, robustly decoupling dating errors from structural deviations, achieving state-of-the-art performance in detecting and localizing fetal brain anomalies.
+**FetalBUAD** is a novel baseline for fetal brain MRI 3D unsupervised anomaly detection (UAD). It repurposes voxel-level brain age prediction for dense lesion localization and establishes an internal biological gestational age reference, robustly decoupling dating errors from structural deviations, achieving state-of-the-art performance in detecting and localizing fetal brain anomalies.
 
 
 ---
@@ -28,7 +28,7 @@ FetalBUAD/
 
 The code is implemented in Python using PyTorch. The main dependencies are:
 
-- Python 3.8+
+- Python 3.9.19
 - PyTorch 1.10+
 - Nibabel
 - Numpy
