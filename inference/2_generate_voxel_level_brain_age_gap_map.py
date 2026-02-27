@@ -10,7 +10,7 @@ from skimage.transform import resize
 import torch.nn.functional as F
 from sklearn.metrics import r2_score,mean_absolute_error
 import matplotlib.pyplot as plt
-from unet import *
+from net import *
 from torch.utils.data import DataLoader
 import os
 import re
@@ -166,4 +166,5 @@ for ii in range(0,subject_id.shape[0]):
     nb.Nifti1Image(mean_voxelmap,img_affine).to_filename(dpSave+str(new_id)+'_mean_voxelmap.nii.gz')
     std_voxelmap=std_voxelmap*mask
     nb.Nifti1Image(std_voxelmap,img_affine).to_filename(dpSave+str(new_id)+'_std_voxelmap.nii.gz')
+
     index=index+1
