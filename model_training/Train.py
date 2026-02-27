@@ -5,7 +5,7 @@ from torch.utils.data import DataLoader
 import os
 from dice import DiceLoss
 from dataset import *
-from unet import *
+from net import *
 
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 batch_size = 8
@@ -109,3 +109,4 @@ for epoch in range(st_epoch+1, num_epoch + 1):
     log[epoch-1,6]=np.mean(loss2_arr)
     log[epoch-1,7]=np.mean(loss3_arr)
     np.save('log.npy',log)
+
