@@ -70,7 +70,6 @@ Train the Joint Multi-task Network. This network simultaneously predicts:
 python model_training/Train.py
 ```
 *   **Configuration:** You can adjust hyperparameters (batch size, learning rate, etc.) inside `Train.py`.
-*   **Target Randomization:** The `dataset.py` implements the stochastic label perturbation strategy to prevent mode collapse during voxel-wise regression training.
 
 ### 3. Inference & Anomaly Detection
 The inference process is divided into three sequential steps to ensure robust detection.
@@ -84,7 +83,7 @@ python inference/1_biascorrection.py
 *   **Output:** Saves `corr_param.npy` containing slope and intercept for global age correction.
 
 #### Step 3.2: Generate Voxel-level Gap Maps
-Perform inference using **Monte Carlo (MC) Dropout** ($T=36$ passes). This script computes the predictive mean and epistemic uncertainty for each voxel and generates the raw Brain Age Gap Map (BAGM).
+Perform inference using **Monte Carlo (MC) Dropout** ($T$ passes). This script computes the predictive mean and epistemic uncertainty for each voxel and generates the raw Brain Age Gap Map (BAGM).
 
 ```bash
 python inference/2_generate_voxel_level_brain_age_gap_map.py
