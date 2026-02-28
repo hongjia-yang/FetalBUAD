@@ -50,14 +50,15 @@ pip install -r requirements.txt
 ## 🚀 Usage
 
 ### 1. Data Preprocessing
-FetalBUAD requires all input volumes to be spatially aligned to a canonical space.
-Run the registration script to register your raw T2w fetal brain volumes (reconstructed via SVR) to the 38-week fetal brain atlas.
+FetalBUAD requires all input volumes to be spatially aligned to a 38-week CRL atlas volume.
+The CRL atlas here: https://www.nature.com/articles/s41598-017-00525-w
+Run the registration script to register your raw T2w fetal brain volumes (reconstructed via SVR) using affine transformation.
 
 ```bash
 python data_processing/registration.py
 ```
-*   **Input:** Raw T2w volumes & Brain masks.
-*   **Output:** Spatially normalized volumes (128x160x128) and segmentation maps aligned to the 38-week template.
+*   **Input:** Raw T2w volumes.
+*   **Output:** Spatially normalized volumes.
 
 ### 2. Model Training
 Train the Joint Multi-task Network. This network simultaneously predicts:
