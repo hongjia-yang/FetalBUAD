@@ -51,7 +51,7 @@ pip install -r requirements.txt
 
 ### 1. Data Preprocessing
 FetalBUAD requires all input volumes to be spatially aligned to a 38-week CRL atlas volume.
-The CRL atlas here: https://www.nature.com/articles/s41598-017-00525-w
+The CRL atlas: "Gholipour, A. et al. A normative spatiotemporal MRI atlas of the fetal brain for automatic segmentation and analysis of early brain growth. Sci Rep 7, 476 (2017)".
 Run the registration script to register your raw T2w fetal brain volumes (reconstructed via SVR) using affine transformation.
 
 ```bash
