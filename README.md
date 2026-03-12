@@ -1,6 +1,6 @@
 # FetalBUAD: Simple Baselines for Fetal Brain Unsupervised Anomaly Detection
 
-**FetalBUAD** is a novel baseline for fetal brain MRI 3D unsupervised anomaly detection (UAD). It repurposes voxel-level brain age prediction for dense lesion localization and establishes an internal biological gestational age reference, robustly decoupling dating errors from structural deviations, achieving state-of-the-art performance in detecting and localizing fetal brain anomalies.
+**FetalBUAD** is a simple but strong baseline for fetal brain MRI 3D unsupervised anomaly detection (UAD). It repurposes voxel-level brain age prediction for dense lesion localization and establishes an internal biological gestational age reference, robustly decoupling dating errors from structural deviations, achieving state-of-the-art performance in detecting and localizing fetal brain anomalies.
 
 
 ---
